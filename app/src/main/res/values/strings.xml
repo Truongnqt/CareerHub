@@ -46,4 +46,6 @@ Screen</string>
   <string name="lbl_search_job">Search Job</string>
   <string name="lbl_remember_me">Remember me</string>
   <string name="lbl_recently_added">Recently Added</string>
+  <string name="google_client_id">4699946153-6kpv8s983qpuo0a9pmv65omamo0kjphk.apps.googleusercontent.com</string>
+
 </resources>

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="SignUpVM" type="com.example.careerhub.ui.Account.SignUp"/>
-    </data>
-    <LinearLayout android:id="@+id/linearColumnlohoAppiconOne"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+         android:id="@+id/SignUp"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStylegray_100">
@@ -59,8 +58,7 @@
                         android:letterSpacing="0.05"
                         android:lineSpacingExtra="@dimen/_9pxh"
                         android:singleLine="true"
-                        android:text="@{SignUpVM.txtSigninto}"
-                        style="@style/txtPoppinsmedium17" tools:text="@string/msg_sign_in_to_jobiago"/>
+                        style="@style/txtPoppinsmedium17" android:text="Sign in to CereerHub"/>
                     <LinearLayout android:gravity="start"
                         android:id="@+id/linearInputwithicon"
                         android:layout_height="wrap_content"
@@ -74,8 +72,7 @@
                             android:letterSpacing="0.05"
                             android:lineSpacingExtra="@dimen/_7pxh"
                             android:singleLine="true"
-                            android:text="@{SignUp.SignUpModel.txtPosition}"
-                            style="@style/txtPoppinsmedium13" tools:text="@string/lbl_username"/>
+                            style="@style/txtPoppinsmedium13" android:text="@string/lbl_username"/>
                         <EditText
                             android:background="@drawable/rectangle_bg_white_a700_border_teal_50_radius_4"
                             android:ellipsize="end"
@@ -92,7 +89,6 @@
                             android:paddingStart="@dimen/_12pxh"
                             android:paddingTop="@dimen/_15pxv"
                             android:singleLine="true"
-                            android:text="@={signupVM.signupModel.etUserNameValue}"
                             android:textColorHint="@color/blue_gray_400_02"
                             style="@style/etSolidRoundedOutline_2" tools:ignore="Autofill"/>
                     </LinearLayout>
@@ -109,8 +105,7 @@
                             android:letterSpacing="0.05"
                             android:lineSpacingExtra="@dimen/_7pxh"
                             android:singleLine="true"
-                            android:text="@{signupVM.signupModel.txtPositionOne}"
-                            style="@style/txtPoppinsmedium13" tools:text="@string/lbl_mobile_number"/>
+                            style="@style/txtPoppinsmedium13" android:text="@string/lbl_mobile_number"/>
                         <EditText
                             android:background="@drawable/rectangle_bg_white_a700_border_teal_50_radius_4"
                             android:ellipsize="end"
@@ -127,7 +122,6 @@
                             android:paddingStart="@dimen/_12pxh"
                             android:paddingTop="@dimen/_15pxv"
                             android:singleLine="true"
-                            android:text="@={signupVM.signupModel.etMobileNumberValue}"
                             android:textColorHint="@color/blue_gray_400_02"
                             style="@style/etSolidRoundedOutline_2" tools:ignore="Autofill"/>
                     </LinearLayout>
@@ -144,8 +138,7 @@
                             android:letterSpacing="0.05"
                             android:lineSpacingExtra="@dimen/_7pxh"
                             android:singleLine="true"
-                            android:text="@{signupVM.signupModel.txtPositionTwo}"
-                            style="@style/txtPoppinsmedium13" tools:text="@string/msg_enter_email_address"/>
+                            style="@style/txtPoppinsmedium13" android:text="@string/msg_enter_email_address"/>
                         <EditText
                             android:background="@drawable/rectangle_bg_white_a700_border_teal_50_radius_4"
                             android:ellipsize="end"
@@ -162,7 +155,6 @@
                             android:paddingStart="@dimen/_12pxh"
                             android:paddingTop="@dimen/_15pxv"
                             android:singleLine="true"
-                            android:text="@={signupVM.signupModel.etEmailValue}"
                             android:textColorHint="@color/blue_gray_400_02"
                             style="@style/etSolidRoundedOutline_2" tools:ignore="Autofill"/>
                     </LinearLayout>
@@ -179,8 +171,7 @@
                             android:letterSpacing="0.05"
                             android:lineSpacingExtra="@dimen/_7pxh"
                             android:singleLine="true"
-                            android:text="@{signupVM.signupModel.txtPositionThree}"
-                            style="@style/txtPoppinsmedium13" tools:text="@string/lbl_password"/>
+                            style="@style/txtPoppinsmedium13" android:text="@string/lbl_password"/>
                         <EditText
                             android:background="@drawable/rectangle_bg_white_a700_border_teal_50_radius_4"
                             android:drawableEnd="@drawable/img_icon_viewpassword"
@@ -199,7 +190,6 @@
                             android:paddingStart="@dimen/_14pxh"
                             android:paddingTop="@dimen/_15pxv"
                             android:singleLine="true"
-                            android:text="@={signupVM.signupModel.etPasswordValue}"
                             android:textColorHint="@color/blue_gray_400_02"
                             style="@style/etSolidRoundedOutline_2" tools:ignore="Autofill"/>
                     </LinearLayout>
@@ -227,8 +217,7 @@
                         android:letterSpacing="0.05"
                         android:lineSpacingExtra="@dimen/_7pxh"
                         android:singleLine="true"
-                        android:text="@{signupVM.signupModel.txtUiuxdesigner}"
-                        style="@style/txtPoppinsregular13" tools:text="@string/lbl_or"/>
+                        style="@style/txtPoppinsregular13" android:text="@string/lbl_or"/>
                     <LinearLayout
                         android:id="@+id/linearRowcontinuewith"
                         android:layout_height="wrap_content"
@@ -259,8 +248,7 @@
                             android:letterSpacing="0.05"
                             android:lineSpacingExtra="@dimen/_7pxh"
                             android:singleLine="true"
-                            android:text="@{signupVM.signupModel.txtContinuewith}"
-                            style="@style/txtPoppinsregular13_1" tools:text="@string/msg_continue_with_google"/>
+                            style="@style/txtPoppinsregular13_1" android:text="@string/msg_continue_with_google"/>
                     </LinearLayout>
                     <LinearLayout android:gravity="end"
                         android:id="@+id/linearRowvectorOne"
@@ -292,8 +280,7 @@
                             android:letterSpacing="0.05"
                             android:lineSpacingExtra="@dimen/_7pxh"
                             android:singleLine="true"
-                            android:text="@{signupVM.signupModel.txtContinuewith1}"
-                            style="@style/txtPoppinsregular13_2" tools:text="@string/msg_continue_with_facebook"/>
+                            style="@style/txtPoppinsregular13_2" android:text="@string/msg_continue_with_facebook"/>
                     </LinearLayout>
                 </LinearLayout>
                 <TextView android:ellipsize="end"
@@ -305,9 +292,7 @@
                     android:letterSpacing="0.05"
                     android:lineSpacingExtra="@dimen/_9pxh"
                     android:singleLine="true"
-                    android:text="@{SignUp.signupModel.txtConfirmation}"
-                    style="@style/txtPoppinsmedium17_2" tools:text="@string/msg_already_have_an"/>
+                    style="@style/txtPoppinsmedium17_2" android:text="@string/msg_already_have_an"/>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-</layout>
